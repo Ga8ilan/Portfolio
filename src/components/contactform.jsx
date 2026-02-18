@@ -3,17 +3,19 @@ import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
     const [state, handleSubmit] = useForm("xbdakaza");
     if (state.succeeded) {
-        return <p>I'll get back to you soon!</p>;
+        return <p>I'll get back to you soon</p>;
     }
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor="email">
-                Email Address
-            </label>
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name" required
+            />
             <input
                 id="email"
-                type="email"
                 name="email"
+                placeholder="Your Email" required
             />
             <ValidationError
                 prefix="Email"
@@ -23,6 +25,7 @@ function ContactForm() {
             <textarea
                 id="message"
                 name="message"
+                placeholder="Your Message" required
             />
             <ValidationError
                 prefix="Message"
@@ -30,7 +33,7 @@ function ContactForm() {
                 errors={state.errors}
             />
             <button type="submit" disabled={state.submitting}>
-                Submit
+                Send Message
             </button>
         </form>
     );
