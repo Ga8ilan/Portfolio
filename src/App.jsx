@@ -1,4 +1,4 @@
-import NavBar from "./components/navbar";
+import NavBar from "./components/navbar_fix";
 import About from "./components/about";
 import Projects from "./components/projects"
 import ContactForm from "./components/contactform";
