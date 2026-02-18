@@ -22,7 +22,7 @@ function ContactForm() {
                 field="email"
                 errors={state.errors}
             />
-            <textarea
+            <input
                 id="message"
                 name="message"
                 placeholder="Your Message" required

@@ -18,7 +18,7 @@ function About() {
                 </p>
                 <p>
                     I've been programming for the past two years and I've learned so much. I've recently
-                    become a fellow <strong>ColorStack</strong> and I'm excited to join and experience even more new things.
+                    become a fellow at <strong>ColorStack</strong> and I'm excited to join and experience even more new things.
                 </p>
             </div>
         </section>
