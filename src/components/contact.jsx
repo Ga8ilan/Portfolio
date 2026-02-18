@@ -1,10 +1,12 @@
 // contact using formspree
 
 function Contact() {
-
-    <section id="contact" className="contact">
-        <h1>"Contact Me</h1>
-    </section>
+    return (
+        <h1>Contact Me</h1>
+    );
 }
+
+export default Contact
+
 
 // oops
