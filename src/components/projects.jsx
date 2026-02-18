@@ -3,10 +3,12 @@
 function Projects() {
     return (
         <section id="projects" className="projects">
-            <h1>Projects</h1>
+            <h2>Projects</h2>
             <div className="projects-content">
                 // will add projects into here at some point
             </div>
         </section>
     )
 }
+
+export default Projects

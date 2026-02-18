@@ -3,7 +3,7 @@
 function About() {
     return (
         <section id="about" className="about">
-            <h2>Edgar Castaneda</h2>
+            <h1>Edgar Castaneda</h1>
             <div className="about-content">
                 <p>
                     Hi! I'm Edgar Castaneda. I study computer science at <strong>Northeastern Univeristy</strong> and
