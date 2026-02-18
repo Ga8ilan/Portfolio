@@ -1,8 +1,8 @@
-import NavBar from "./components/navbar.jsx";
-import About from "./components/about.jsx";
-import Projects from "./components/projects.jsx"
-import ContactForm from "./components/contactform.jsx";
-import Contact from "./components/contact.jsx"
+import NavBar from "./components/navbar";
+import About from "./components/about";
+import Projects from "./components/projects"
+import ContactForm from "./components/contactform";
+import Contact from "./components/contact"
 
 function App() {
   return (
