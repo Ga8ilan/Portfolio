@@ -1,5 +1,5 @@
-// About section of my website
-
+import edgar from "../assets/edgar.png"
+/* About section of my website*/
 function About() {
     return (
         <section id="about" className="about" >
@@ -21,7 +21,7 @@ function About() {
                     I've been programming for the past two years and I've learned so much. I've recently
                     become a fellow at <strong>ColorStack</strong> and I'm excited to join and experience even more new things.
                 </p>
-                <image src={E} alt="Edgar Logo" className="logo" />
+                <img src={edgar} alt="Edgar image" className="edgar" />
             </div>
         </section >
     );
