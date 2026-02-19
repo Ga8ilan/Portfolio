@@ -2,10 +2,12 @@ import thelmaImg from "../assets/thelmaclean.png";
 import stetsonImg from "../assets/StetsonSocial.png";
 import gatchiImg from "../assets/gatchi.png";
 import zuckbuckImg from "../assets/zuckbuck.png";
+import { useState } from "react";
 
 // projects section of website
 function Projects() {
     /*  Array for projects (makes it easy to add future projects) */
+    const [showAll, setShowAll] = useState(false);
     const projects = [
         {
             id: 1,
@@ -43,14 +45,15 @@ function Projects() {
             techStack: ["Next.js", "React", "Python", "Supabase", "Tailwind CSS", "Ethers 6", "Coinbase Wallet SDK"],
             location: ""
         },
-
     ];
+    const projectsToShow = showAll ? projects : projects.slice(0, 3);
+
     return (
         <section id="projects" className="projects">
             {/* Mapping each project in the array onto the website with html elements */}
             <h2>Projects</h2>
             <div className="projects-content">
-                {projects.map((project) => (
+                {projectsToShow.map((project) => (
                     <article key={project.id} className="project-card">
                         <h3 className="project-card-title">{project.title}</h3>
                         <div className="project-card-image">
@@ -64,9 +67,11 @@ function Projects() {
                     </article>
                 ))}
             </div>
-            <button class="see-more">
-                See More
-            </button>
+            {projects.length > 3 && (
+                <button type="button" className="see-more" onClick={() => setShowAll(!showAll)}>
+                    {showAll ? "see Less" : "See More"}
+                </button>
+            )}
         </section>
     )
 }
