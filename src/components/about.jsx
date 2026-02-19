@@ -21,8 +21,8 @@ function About() {
                     just a simple chat.
                 </p>
                 <p>
-                    I've been programming for the past two years and I've learned so much. I've recently
-                    become a fellow at <strong>ColorStack</strong> and I'm excited to join and experience even more new things.
+                    I've been programming for the past two years and I've learned so much. I'm currently a fellow
+                    at <strong>ColorStack</strong> 🇬🇹 & a Northeastern CS3100 Teaching Assistant!
                 </p>
                 <h2>Technical Skills:</h2>
                 <div className="technical-skills">
