@@ -4,7 +4,7 @@ import githubIcon from "../assets/github-icon.png";
 
 function Contact() {
     return (
-        <section className="contact">
+        <section id="contact" className="contact">
             <h1>Contact Me</h1>
             <div className="contact-links">
                 {/* Linkedin icon + link */}
