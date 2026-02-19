@@ -79,13 +79,26 @@
 }
 
 /* ABOUT CSS */
+
+/*
 .about {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.9fr);
-  /* image | text */
   gap: 2.5rem;
   align-items: start;
   padding-top: 6rem;
+}
+*/
+
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.9fr);
+  gap: 2.5rem;
+  align-items: start;
+  padding: 2rem;
+  /*background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);*/
+  border-radius: 1rem;
 }
 
 .about img.edgar {
