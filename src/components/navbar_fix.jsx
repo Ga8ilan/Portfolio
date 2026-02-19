@@ -5,7 +5,7 @@ function NavBar() {
         <nav className="navbar">
             {/* Navbar code */}
             <div className="nav-container">
-                <ul className="nan-links">
+                <ul className="nav-links">
                     <li>
                         <a href="#about">About
                             <img src={E} alt="Edgar Logo" className="logo" />
