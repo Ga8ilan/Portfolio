@@ -1,5 +1,5 @@
 .navbar {
-  position: sticky;
+  position: static;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(12px);
@@ -42,4 +42,72 @@
   width: 28px;
   height: 28px;
   object-fit: cover;
+}
+
+.App {
+  min-height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.9fr);
+  /* image | text */
+  gap: 3rem;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.about img.edgar {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+
+.technical-skills {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.technical-skills span {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .nav-container {
+    justify-content: center;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about img.edgar {
+    margin: 0 auto 1.5rem;
+  }
+
+  .about h1 {
+    font-size: 2.2rem;
+  }
 }

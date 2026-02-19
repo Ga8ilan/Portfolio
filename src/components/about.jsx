@@ -5,9 +5,10 @@ function About() {
 
     return (
         <section id="about" className="about" >
+            <img src={edgar} alt="Edgar image" className="edgar" />
             {/* simple about */}
-            <h1>Edgar Castaneda</h1>
             <div className="about-content">
+                <h1>Edgar Castaneda</h1>
                 <p>
                     Hi! I'm Edgar Castaneda. I study computer science at <strong>Northeastern Univeristy</strong> and
                     I'm concentrating in Software! I'm passionate about the things I build and I truly
@@ -23,15 +24,14 @@ function About() {
                     I've been programming for the past two years and I've learned so much. I've recently
                     become a fellow at <strong>ColorStack</strong> and I'm excited to join and experience even more new things.
                 </p>
-                <img src={edgar} alt="Edgar image" className="edgar" />
-            </div>
-            <h2>Technical Skills</h2>
-            <div className="technical-skills">
-                {technicalSkills.map((skill) =>
-                    <span
-                        key={skill} className="skill">{skill}
-                    </span>
-                )}
+                <h2>Technical Skills</h2>
+                <div className="technical-skills">
+                    {technicalSkills.map((skill) =>
+                        <span
+                            key={skill} className="skill">{skill}
+                        </span>
+                    )}
+                </div>
             </div>
         </section >
     );
