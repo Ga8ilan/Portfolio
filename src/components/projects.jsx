@@ -1,5 +1,9 @@
-// projects section of website
+import thelmaImg from "../assets/thelmaclean.png";
+import stetsonImg from "../assets/StetsonSocial.png";
+import gatchiImg from "../assets/gatchi.png";
+import zuckbuckImg from "../assets/zuckbuck.png";
 
+// projects section of website
 function Projects() {
     /*  Array for projects (makes it easy to add future projects) */
     const projects = [
@@ -8,7 +12,7 @@ function Projects() {
             title: "Thelma's cleaning services",
             description: "This is a website for my moms small cleaning business that provides cleaning services to the community. I built this simple website to get her more clients and succesfully help her get more customers.",
             dateCreated: "July 2025",
-            image: "./src/assets/thelmaclean.png",
+            image: thelmaImg,
             techStack: ["React", "Formspree"],
         },
         {
@@ -16,7 +20,7 @@ function Projects() {
             title: "Stetson Social",
             description: "This website was made during a Steast Hackathon. We made it using React and Node. This website let users create events that other users could join and partiicpate in. It's a great webste for planning.",
             dateCreated: "March 2025",
-            image: "./src/assets/StetsonSocial.png",
+            image: stetsonImg,
             techStack: ["React", "Tailwind CSS", "Next.js", "Firebase"],
         },
         {
@@ -24,7 +28,7 @@ function Projects() {
             title: "StudiGotchi",
             description: "This is a game studying web application to make studying more fun and engaging by having to care for a Tomagotchi. You upload a file and it generates questions based off that file.",
             dateCreated: "Febuary 2026",
-            image: "./src/assets/gatchi.png",
+            image: gatchiImg,
             techStack: ["React", "Python", "Snowflake", "FastAPI"],
         },
         {
@@ -32,7 +36,7 @@ function Projects() {
             title: "ZuckBuck",
             description: "Website for the selling and buying of the ZuckBuck cryptocurrency. It let users connect either their Phantom or Coinbase wallets but this project is paused for not because both me and my co-partner Zach are busy with school",
             dateCreated: "Ongoing (Paused Indefinitely)",
-            image: "./src/assets/zuckbuck.png",
+            image: zuckbuckImg,
             techStack: ["Next.js", "React", "Python", "Supabase", "Tailwind CSS", "Ethers 6", "Coinbase Wallet SDK"],
         },
 
