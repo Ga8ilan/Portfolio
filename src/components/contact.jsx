@@ -1,7 +1,7 @@
 import mailIcon from "../assets/mail-icon.png";
 import linkedinIcon from "../assets/linkedin-symbol.png";
 import githubIcon from "../assets/github-icon.png";
-import instagramIcon from "../assets/instagram-icon.png";
+import instagramIcon from "../assets/insta-icon.png";
 import ContactForm from "./contactform";
 
 function Contact() {

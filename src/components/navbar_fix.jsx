@@ -1,4 +1,4 @@
-import E from '../assets/EC.png'
+import E from '../assets/ecnew.png'
 
 function NavBar() {
     return (
