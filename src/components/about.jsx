@@ -1,4 +1,4 @@
-import edgar from "../assets/edgar.png"
+import edgar from "../assets/newedgar1.png"
 /* About section of my website*/
 function About() {
     const technicalSkills = ["React & Next.js", "Javascript & Typescript", "HTML", "Java", "Docker", "SQL"]
