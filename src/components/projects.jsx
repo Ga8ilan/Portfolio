@@ -60,6 +60,9 @@ function Projects() {
                     </article>
                 ))}
             </div>
+            <button class="see-more">
+                See More
+            </button>
         </section>
     )
 }
