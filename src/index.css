@@ -9,7 +9,9 @@
   --bg: #0f0f0f;
   --text-main: #e9eef8;
   --text-muted: #d0d8e8;
-  --accent: #0099FF;
+  --accent: #2e5a88
+    /*#0099FF*/
+  ;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

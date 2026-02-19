@@ -24,7 +24,7 @@ function About() {
                     I've been programming for the past two years and I've learned so much. I've recently
                     become a fellow at <strong>ColorStack</strong> and I'm excited to join and experience even more new things.
                 </p>
-                <h2>Technical Skills</h2>
+                <h2>Technical Skills:</h2>
                 <div className="technical-skills">
                     {technicalSkills.map((skill) =>
                         <span

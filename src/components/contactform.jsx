@@ -4,7 +4,11 @@ import '../styles/contactform.css';
 function ContactForm() {
     const [state, handleSubmit] = useForm("xbdakaza");
     if (state.succeeded) {
-        return <p>I'll get back to you soon</p>;
+        return (
+            <div className="success-message">
+                <p>I'll get back to you soon!</p>
+            </div>
+        );
     }
     return (
         <form onSubmit={handleSubmit}>

@@ -18,8 +18,8 @@ function Projects() {
             dateCreated: "July 2025",
             image: thelmaImg,
             techStack: ["React", "Formspree"],
-            github: "",
-            liveLink: ""
+            github: "https://github.com/Ga8ilan/cleaning",
+            liveLink: "https://www.thelmacleaning.com/#home"
         },
         {
             id: 2,
@@ -28,8 +28,8 @@ function Projects() {
             dateCreated: "March 2025",
             image: stetsonImg,
             techStack: ["React", "Tailwind CSS", "Next.js", "Firebase"],
-            github: "",
-            liveLink: ""
+            github: "https://github.com/dnakhooda/StetsonSocial",
+            liveLink: "https://stetson-social.vercel.app/"
         },
         {
             id: 3,
@@ -38,7 +38,7 @@ function Projects() {
             dateCreated: "Febuary 2026",
             image: gatchiImg,
             techStack: ["React", "Python", "Snowflake", "FastAPI"],
-            github: "",
+            github: "https://github.com/AnjaliSuresh2712/StudiGotchi",
             liveLink: ""
         },
         {
@@ -48,8 +48,8 @@ function Projects() {
             dateCreated: "Ongoing (Paused Indefinitely)",
             image: zuckbuckImg,
             techStack: ["Next.js", "React", "Python", "Supabase", "Tailwind CSS", "Ethers 6", "Coinbase Wallet SDK"],
-            github: "",
-            liveLink: ""
+            github: "https://github.com/Ga8ilan/zuckbuck2",
+            liveLink: "https://zuckbuck.netlify.app/"
         },
     ];
     const projectsToShow = showAll ? projects : projects.slice(0, 3);
