@@ -3,6 +3,7 @@ import E from '../assets/E.png'
 function NavBar() {
     return (
         <nav className="navbar">
+            {/* Navbar code */}
             <div className="nav-container">
                 <ul className="nan-links">
                     <li>

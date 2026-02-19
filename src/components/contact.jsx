@@ -7,6 +7,7 @@ function Contact() {
         <section className="contact">
             <h1>Contact Me</h1>
             <div className="contact-links">
+                {/* Linkedin icon + link */}
                 <a
                     href="https://www.linkedin.com/in/edgar-castaneda-jr/"
                     target="_blank"
@@ -16,6 +17,7 @@ function Contact() {
                 >
                     <img src={linkedinIcon} alt="LinkedIn" />
                 </a>
+                {/* Github icon + link */}
                 <a
                     href="https://github.com/Ga8ilan"
                     target="_blank"
@@ -25,6 +27,7 @@ function Contact() {
                 >
                     <img src={githubIcon} alt="Github" />
                 </a>
+                {/* Mail icon + link */}
                 <a
                     href="mailto:castaneda.e@northeastern.edu"
                     target="_blank"
@@ -41,5 +44,3 @@ function Contact() {
 
 export default Contact
 
-
-// oops

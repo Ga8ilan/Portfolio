@@ -1,7 +1,7 @@
 // projects section of website
 
 function Projects() {
-    /* array for all projects */
+    /*  Array for projects (makes it easy to add future projects) */
     const projects = [
         {
             id: 1,
@@ -39,6 +39,7 @@ function Projects() {
     ];
     return (
         <section id="projects" className="projects">
+            {/* Mapping each project in the array onto the website with html elements */}
             <h2>Projects</h2>
             <div className="projects-content">
                 {projects.map((project) => (

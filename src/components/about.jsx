@@ -2,7 +2,8 @@
 
 function About() {
     return (
-        <section id="about" className="about">
+        <section id="about" className="about" >
+            {/* simple about */}
             <h1>Edgar Castaneda</h1>
             <div className="about-content">
                 <p>
@@ -21,7 +22,7 @@ function About() {
                     become a fellow at <strong>ColorStack</strong> and I'm excited to join and experience even more new things.
                 </p>
             </div>
-        </section>
+        </section >
     );
 }
 

@@ -7,6 +7,7 @@ function ContactForm() {
     }
     return (
         <form onSubmit={handleSubmit}>
+            {/* All formspree code + some additions */}
             <input
                 type="text"
                 name="name"
