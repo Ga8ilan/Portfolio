@@ -21,6 +21,7 @@ function About() {
                     I've been programming for the past two years and I've learned so much. I've recently
                     become a fellow at <strong>ColorStack</strong> and I'm excited to join and experience even more new things.
                 </p>
+                <image src={E} alt="Edgar Logo" className="logo" />
             </div>
         </section >
     );

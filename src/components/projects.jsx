@@ -10,26 +10,29 @@ function Projects() {
         {
             id: 1,
             title: "Thelma's cleaning services",
-            description: "This is a website for my moms small cleaning business that provides cleaning services to the community. I built this simple website to get her more clients and succesfully help her get more customers.",
+            description: "This is a website for my mom's small cleaning business that provides cleaning services to the community. I built this simple website to get her more clients and succesfully help her get more customers.",
             dateCreated: "July 2025",
             image: thelmaImg,
             techStack: ["React", "Formspree"],
+            location: ""
         },
         {
             id: 2,
             title: "Stetson Social",
-            description: "This website was made during a Steast Hackathon. We made it using React and Node. This website let users create events that other users could join and partiicpate in. It's a great webste for planning.",
+            description: "This website was made during a Steast Hackathon. We made it using React and Node. This website let users create events that other users could join and particpate in. It's a great website for planning.",
             dateCreated: "March 2025",
             image: stetsonImg,
             techStack: ["React", "Tailwind CSS", "Next.js", "Firebase"],
+            location: ""
         },
         {
             id: 3,
             title: "StudiGotchi",
-            description: "This is a game studying web application to make studying more fun and engaging by having to care for a Tomagotchi. You upload a file and it generates questions based off that file.",
+            description: "This is a game studying web application to make studying more fun and engaging by having to care for a Tamagotchi. You upload a file and it generates questions based off that file.",
             dateCreated: "Febuary 2026",
             image: gatchiImg,
             techStack: ["React", "Python", "Snowflake", "FastAPI"],
+            location: ""
         },
         {
             id: 4,
@@ -38,6 +41,7 @@ function Projects() {
             dateCreated: "Ongoing (Paused Indefinitely)",
             image: zuckbuckImg,
             techStack: ["Next.js", "React", "Python", "Supabase", "Tailwind CSS", "Ethers 6", "Coinbase Wallet SDK"],
+            location: ""
         },
 
     ];
