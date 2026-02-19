@@ -8,6 +8,8 @@ import { useState } from "react";
 function Projects() {
     /*  Array for projects (makes it easy to add future projects) */
     const [showAll, setShowAll] = useState(false);
+    const [selectedProject, setSelectedProject] = useState(null);
+
     const projects = [
         {
             id: 1,
@@ -16,7 +18,8 @@ function Projects() {
             dateCreated: "July 2025",
             image: thelmaImg,
             techStack: ["React", "Formspree"],
-            location: ""
+            github: "",
+            liveLink: ""
         },
         {
             id: 2,
@@ -25,7 +28,8 @@ function Projects() {
             dateCreated: "March 2025",
             image: stetsonImg,
             techStack: ["React", "Tailwind CSS", "Next.js", "Firebase"],
-            location: ""
+            github: "",
+            liveLink: ""
         },
         {
             id: 3,
@@ -34,7 +38,8 @@ function Projects() {
             dateCreated: "Febuary 2026",
             image: gatchiImg,
             techStack: ["React", "Python", "Snowflake", "FastAPI"],
-            location: ""
+            github: "",
+            liveLink: ""
         },
         {
             id: 4,
@@ -43,7 +48,8 @@ function Projects() {
             dateCreated: "Ongoing (Paused Indefinitely)",
             image: zuckbuckImg,
             techStack: ["Next.js", "React", "Python", "Supabase", "Tailwind CSS", "Ethers 6", "Coinbase Wallet SDK"],
-            location: ""
+            github: "",
+            liveLink: ""
         },
     ];
     const projectsToShow = showAll ? projects : projects.slice(0, 3);
@@ -54,7 +60,11 @@ function Projects() {
             <h2>Projects</h2>
             <div className="projects-content">
                 {projectsToShow.map((project) => (
-                    <article key={project.id} className="project-card">
+                    <article
+                        key={project.id}
+                        className="project-card"
+                        onClick={() => setSelectedProject(project)}
+                    >
                         <h3 className="project-card-title">{project.title}</h3>
                         <div className="project-card-image">
                             <img src={project.image} alt={project.title} />
@@ -71,6 +81,60 @@ function Projects() {
                 <button type="button" className="see-more" onClick={() => setShowAll(!showAll)}>
                     {showAll ? "see Less" : "See More"}
                 </button>
+            )}
+
+            {/* Project Detail Modal */}
+            {selectedProject && (
+                <div className="project-modal" onClick={() => setSelectedProject(null)}>
+                    <div className="project-modal-content" onClick={(e) => e.stopPropagation()}>
+                        <div className="project-modal-header">
+                            <button
+                                className="project-modal-close"
+                                onClick={() => setSelectedProject(null)}
+                            >
+                                ×
+                            </button>
+                            <img
+                                src={selectedProject.image}
+                                alt={selectedProject.title}
+                                className="project-modal-image"
+                            />
+                        </div>
+                        <div className="project-modal-body">
+                            <h2 className="project-modal-title">{selectedProject.title}</h2>
+
+                            <div className="project-modal-section">
+                                <h3>Description:</h3>
+                                <p className="project-modal-description">{selectedProject.description}</p>
+                            </div>
+
+                            <div className="project-modal-section">
+                                <h3>Technologies:</h3>
+                                <div className="project-modal-tech">
+                                    {selectedProject.techStack.map((tech) => (
+                                        <span key={tech}>{tech}</span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="project-modal-section">
+                                <h3>Links:</h3>
+                                <div className="project-modal-links">
+                                    {selectedProject.github && (
+                                        <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                                            {selectedProject.github}
+                                        </a>
+                                    )}
+                                    {selectedProject.liveLink && (
+                                        <a href={selectedProject.liveLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                                            {selectedProject.liveLink}
+                                        </a>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             )}
         </section>
     )
