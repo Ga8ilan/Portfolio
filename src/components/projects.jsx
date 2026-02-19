@@ -44,7 +44,7 @@ function Projects() {
         {
             id: 4,
             title: "ZuckBuck",
-            description: "Website for the selling and buying of the ZuckBuck cryptocurrency. It let users connect either their Phantom or Coinbase wallets but this project is paused for not because both me and my co-partner Zach are busy with school",
+            description: "Website for the selling and buying of the ZuckBuck cryptocurrency. It let users connect either their Phantom or Coinbase wallets but this project is paused indefinitely due to both me and my co-partner Zach are busy with school",
             dateCreated: "Ongoing (Paused Indefinitely)",
             image: zuckbuckImg,
             techStack: ["Next.js", "React", "Python", "Supabase", "Tailwind CSS", "Ethers 6", "Coinbase Wallet SDK"],
