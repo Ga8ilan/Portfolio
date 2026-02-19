@@ -130,7 +130,6 @@
   left: 0;
   width: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent), var(--accent) 70%, var(--bg));
   transition: width 0.3s ease;
 }
 
@@ -431,52 +430,85 @@
 .contact {
   margin-top: 4rem;
   padding: 2rem 0;
-  text-align: center;
 }
 
 .contact h1 {
   font-size: 2.2rem;
   font-weight: 700;
-  margin: 0 0 2rem;
+  margin: 0 0 3rem;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.get-in-touch h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
   color: var(--text-main);
 }
 
-.contact-links {
+.contact-methods {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
-.contact-links a {
+.contact-method {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  background-color: #ffffff;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
   transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--text-main);
 }
 
-.contact-links a img {
-  width: 32px;
-  height: 32px;
+.contact-method:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-method img {
+  width: 40px;
+  height: 40px;
   object-fit: contain;
-  filter: invert(0);
+  filter: invert(1) brightness(0.9);
 }
 
-.contact-links a:hover {
-  background-color: var(--accent);
-  border-color: var(--accent);
-}
-
-.contact-links a:hover img {
-  filter: brightness(0) invert(1);
+.contact-method span {
+  font-size: 0.95rem;
+  color: var(--text-muted);
 }
 
 /* MOBILE + DESKTOP COMPATIBILITY */
+@media (max-width: 768px) {
+  .contact h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .App {
     padding: 0 1rem 3rem;

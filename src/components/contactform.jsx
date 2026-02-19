@@ -1,4 +1,5 @@
 import { useForm, ValidationError } from '@formspree/react';
+import '../styles/contactform.css';
 
 function ContactForm() {
     const [state, handleSubmit] = useForm("xbdakaza");
@@ -7,32 +8,55 @@ function ContactForm() {
     }
     return (
         <form onSubmit={handleSubmit}>
-            {/* All formspree code + some additions */}
-            <input
-                type="text"
-                name="name"
-                placeholder="Your Name" required
-            />
-            <input
-                id="email"
-                name="email"
-                placeholder="Your Email" required
-            />
-            <ValidationError
-                prefix="Email"
-                field="email"
-                errors={state.errors}
-            />
-            <input
-                id="message"
-                name="message"
-                placeholder="Your Message" required
-            />
-            <ValidationError
-                prefix="Message"
-                field="message"
-                errors={state.errors}
-            />
+            <div className="form-row">
+                <div className="form-group">
+                    <label htmlFor="name">Name</label>
+                    <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input
+                        id="email"
+                        name="email"
+                        required
+                    />
+                    <ValidationError
+                        prefix="Email"
+                        field="email"
+                        errors={state.errors}
+                    />
+                </div>
+            </div>
+
+            <div className="form-group">
+                <label htmlFor="subject">Subject</label>
+                <input
+                    id="subject"
+                    type="text"
+                    name="subject"
+                    required
+                />
+            </div>
+
+            <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                ></textarea>
+                <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                />
+            </div>
+
             <button type="submit" disabled={state.submitting}>
                 Send Message
             </button>
