@@ -32,7 +32,7 @@
 }
 
 .nav-links a {
-  color: #ffffff;
+  color: #999999;
   text-decoration: none;
   font-size: 0.96rem;
   font-weight: 500;
@@ -41,10 +41,27 @@
   display: flex;
   align-items: center;
   gap: 0.35rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .nav-links a:hover {
-  color: #133a6d;
+  color: #ffffff;
 }
 
 .logo {
@@ -90,6 +107,7 @@
   line-height: 1.65;
   /* readability */
   color: var(--text-muted);
+  text-align: justify;
 }
 
 .about-content h1 {
@@ -97,8 +115,27 @@
   /* bigger title like the reference */
   line-height: 1;
   font-weight: 800;
-  margin: 0 0 1.25rem;
-  white-space: nowrap;
+  margin: 0 0 2rem;
+  white-space: normal;
+  position: relative;
+  display: block;
+  transition: color 0.3s ease;
+  padding-bottom: 0.8rem;
+}
+
+.about-content h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent) 70%, var(--bg));
+  transition: width 0.3s ease;
+}
+
+.about-content h1:hover::after {
+  width: 100%;
 }
 
 .about-content h2 {
@@ -161,7 +198,6 @@
 
 .project-card:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: var(--accent);
   transform: translateY(-4px);
 }
 
@@ -391,6 +427,55 @@
   color: var(--text-main);
 }
 
+/* CONTACT CSS */
+.contact {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 2rem;
+  color: var(--text-main);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.contact-links a img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: invert(0);
+}
+
+.contact-links a:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.contact-links a:hover img {
+  filter: brightness(0) invert(1);
+}
+
 /* MOBILE + DESKTOP COMPATIBILITY */
 @media (max-width: 768px) {
   .App {
@@ -437,5 +522,13 @@
 
   .project-modal-body {
     padding: 1.5rem;
+  }
+
+  .contact h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-links {
+    gap: 1.5rem;
   }
 }

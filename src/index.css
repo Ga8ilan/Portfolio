@@ -8,8 +8,8 @@
   /* Color variables */
   --bg: #0f0f0f;
   --text-main: #e9eef8;
-  --text-muted: #b8c2d6;
-  --accent: #00CCFF;
+  --text-muted: #d0d8e8;
+  --accent: #0099FF;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,6 +18,10 @@
 }
 
 /* Page-wide base styles */
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 #root {

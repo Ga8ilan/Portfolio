@@ -71,7 +71,6 @@ function Projects() {
                         </div>
                         <div className="project-card-info">
                             <p>{project.description}</p>
-                            <p>{project.techStack.join(", ")}</p>
                             <span className="project-date">Date Created: {project.dateCreated}</span>
                         </div>
                     </article>
